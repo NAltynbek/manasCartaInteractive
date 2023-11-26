@@ -1,0 +1,82 @@
+body {
+	margin: 0; padding: 0;}
+
+.map {
+	position: relative;
+	text-align: center;
+}
+.map img {
+	width: 100%;
+    height: auto;
+}
+
+.image_manas {
+	position: relative;
+    top: 2px;
+	left: 0;
+    z-index: -1;
+}
+
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.part {
+	opacity: .5;
+}
+
+
+.description {
+	display: none;
+	border-radius: 5px;
+	position: fixed;
+	right: 50px;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 300px;
+	height: 400px;
+	box-shadow: 0 0 32px 10px #810101;
+	font-family: sans-serif;
+}
+
+.description img {
+	width: 250px;
+	margin-bottom: 20px;
+}
+
+#description_open.show {
+	display: block;
+  }
+
+@media screen and (max-width: 600px) {
+
+.description {
+	display: none;
+	border-radius: 5px;
+	position: relative;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	background-color: rgba(255, 255, 255, 0.785);
+}
+
+.description img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#description_open.show {
+	display: block;
+}
+}
+
+
+
